@@ -1,6 +1,6 @@
 {
   "name": "@itablera/wrap-common",
-  "version": "0.7.31",
+  "version": "0.7.32",
   "description": "Collection of utilities and common domains",
   "main": "dist/index",
   "types": "dist/index",
