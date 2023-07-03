@@ -2,47 +2,47 @@
     "categories": [
       {
         "title": "## 🛠 Backend",
-        "labels": ["area: backend"]
+        "labels": ["backend"]
       },
       {
         "title": "## 🚀 CI/CD",
-        "labels": ["area: CI/CD"]
+        "labels": ["CI/CD"]
       },
       {
         "title": "## 🎨 CSS Styling",
-        "labels": ["area: css styling"]
+        "labels": ["css styling"]
       },
       {
         "title": "## 🕵️‍♂️ Design",
-        "labels": ["area: design"]
+        "labels": ["design"]
       },
       {
         "title": "## 🐳 Docker",
-        "labels": ["area: docker"]
+        "labels": ["docker"]
       },
       {
         "title": "## 🌈 API",
-        "labels": ["area: api"]
+        "labels": ["api"]
       },
       {
         "title": "## 🎭 Front-end",
-        "labels": ["area: front-end"]
+        "labels": ["frontend"]
       },
       {
         "title": "## ⚙ Microservices",
-        "labels": ["area: microservices"]
+        "labels": ["microservices"]
       },
       {
         "title": "## 🏎 Performance",
-        "labels": ["area: performance"]
+        "labels": ["performance"]
       },
       {
         "title": "## 📲 Progressive Web Apps",
-        "labels": ["area: PWA"]
+        "labels": ["PWA"]
       },
       {
         "title": "## 🧰 Tools",
-        "labels": ["area: tools"]
+        "labels": ["tools"]
       },
       {
         "title": "## 🖇 Dependencies",
@@ -50,31 +50,23 @@
       },
       {
         "title": "## 👨‍💻 Developer Experience",
-        "labels": ["developer experience"]
+        "labels": ["developer-experience"]
       },
       {
         "title": "## 🐛 Bug Fixes",
-        "labels": ["type: bug"]
+        "labels": ["bug"]
       },
       {
         "title": "## 📃 Documentation Updates",
-        "labels": ["type: documentation (docs)"]
-      },
-      {
-        "title": "## ✨ Enhancements",
-        "labels": ["type: enhancement"]
-      },
-      {
-        "title": "## 💡 Nice to Have",
-        "labels": ["type: nice to have"]
+        "labels": ["documentation"]
       },
       {
         "title": "## 🔐 Security Enhancements",
-        "labels": ["type: security"]
+        "labels": ["security"]
       },
       {
         "title": "## 🛡 Tests",
-        "labels": ["type: test"]
+        "labels": ["test"]
       }
     ],
     "ignore_labels": ["ignore"],
