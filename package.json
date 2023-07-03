@@ -2,10 +2,10 @@
   "name": "@itablera/wrap-common",
   "version": "0.7.21",
   "description": "Collection of utilities and common domains",
-  "main": "dist/index",
-  "types": "dist/index",
+  "main": "src/index",
+  "types": "src/index",
   "files": [
-    "dist"
+    "src"
   ],
   "repository": {
     "url": "https://github.com/Itablera/wrap-common.git"
