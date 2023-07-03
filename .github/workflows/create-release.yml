@@ -31,6 +31,9 @@ on:
 jobs:
   create-release:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      packages: write
     steps:
     - name: "Checkout source code"
       uses: "actions/checkout@v3"
@@ -38,8 +41,10 @@ jobs:
       uses: "phips28/gh-action-bump-version@master"
       id: version-bump
       with:
-        tag-prefix: ''
+        PACKAGEJSON_DIR: "."
+        skip-tag: true
       env:
+        skip-tag: true
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Get tag name from ref
       shell: bash
@@ -52,11 +57,11 @@ jobs:
       with:
         configuration: 'release-changelog-builder-config.json'
       env:
-        GITHUB_TOKEN: ${{ secrets.PJORE_PAT }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Create release in main
       uses: softprops/action-gh-release@v1
       with:
-        token: ${{ secrets.PJORE_PAT }}
+        token: ${{ secrets.GITHUB_TOKEN }}
         tag_name: ${{ steps.get_tag.outputs.RELEASE_TAG }}
         name: Release ${{ steps.get_tag.outputs.RELEASE_TAG }}
         body: ${{steps.build_changelog.outputs.changelog}}
