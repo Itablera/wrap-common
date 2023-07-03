@@ -30,9 +30,6 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version: '16.x'
-        registry-url: 'https://npm.pkg.github.com'
-        # Defaults to the user or organization that owns the workflow file
-        scope: '@itablera'
     - run: npm ci
     - run: npm publish
       env:
