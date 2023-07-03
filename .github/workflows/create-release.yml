@@ -20,13 +20,9 @@
 name: Create release
 
 on:
-  #push:
-   # branches:
-    #- main
-    #paths:
-    #- apps/**
-    #- packages/**
-  workflow_dispatch:
+  push:
+    branches:
+    - main
 
 jobs:
   create-release:
@@ -42,9 +38,9 @@ jobs:
       id: version-bump
       with:
         PACKAGEJSON_DIR: "."
-        skip-tag: true
+        skip-tag: false
       env:
-        skip-tag: true
+        skip-tag: false
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Get tag name from ref
       shell: bash
