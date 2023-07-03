@@ -1,17 +1,14 @@
 {
   "name": "@itablera/wrap-common",
-  "version": "0.7.25",
+  "version": "0.7.26",
   "description": "Collection of utilities and common domains",
-  "main": "src/index",
-  "types": "src/index",
+  "main": "dist/index",
+  "types": "dist/index",
   "files": [
-    "src"
+    "dist"
   ],
   "repository": {
     "url": "https://github.com/Itablera/wrap-common.git"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "build": "npm run clean && npm run compile",
